@@ -3,11 +3,10 @@ body{
     color: var(--fontColor);
     font-family: helvetica;
 }
-li{
-    list-style: circle;
-}
 .list{
-    list-style: square;
+    position: absolute;
+    left: 650px;
+    top: 100px;
 }
 :root{
     --green: #00FF00;
