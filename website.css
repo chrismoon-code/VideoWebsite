@@ -35,6 +35,14 @@ body{
     --btnBg: var(--black);
     --btnFontColor: var(--green);
 }
+.me{
+    position:absolute;
+    font-size: 14px;
+    left: 650px;
+    top: 300px;
+    background-color: var(--orange)
+    
+}
 .dark-theme{
     --bg: var(--black);
     --fontColor: var(--green);
