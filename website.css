@@ -29,6 +29,10 @@ body{
 .title{
   text-align: center;
 }
+#imageplacement{
+   margin-top: 250px;
+   margin-left: 630px;
+}
 .light-theme{
     --bg: var(--white);
     --fontColor: var(--black);
