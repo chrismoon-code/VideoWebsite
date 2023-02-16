@@ -3,16 +3,22 @@ body{
     color: var(--fontColor);
     font-family: helvetica;
 }
-.list{
+.description{
     position: absolute;
-    left: 650px;
-    top: 100px;
+    left: 75px;
+    top: 750px;
+}
+.pet{
+    position: absolute;
+    left: 1610px;
+    top: 570px;
 }
 :root{
     --green: #00FF00;
     --white: #FFFFFF;
     --black: #000000;
     --orange: #FFA500;
+    --cyan: #00FFFF;
 }
 .id{
     top: 40px;
@@ -20,31 +26,62 @@ body{
     height: 100px;
     width: 100px;
 }
-.titlepage{
+.links{
+    font-weight: bold;
+    position: absolute;
+    left: 75px; 
+    top: 400px; 
+}
+.aboutMe{
     position:absolute; 
-    left: 650px; 
-    top: 50px; 
-    background-color: var(--orange);
+    left: 75px; 
+    top: 730px; 
+    font-weight: bold;
 }
 .title{
   text-align: center;
 }
-#imageplacement{
-   margin-top: 250px;
-   margin-left: 630px;
+#portrait{
+   margin-top: 230px;
+   margin-left: 750px;
 }
-.light-theme{
-    --bg: var(--white);
+#dog{
+    margin-top: 200px;
+    margin-left: 400px;
+}
+.cyan-theme{
+    --bg: var(--cyan);
     --fontColor: var(--black);
     --btnBg: var(--black);
-    --btnFontColor: var(--green);
+    --btnFontColor: var(--cyan);
+}
+.github{
+    position: absolute;
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+    left: 75px; 
+    top: 450px; 
+    height: 50px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+}
+.LinkedIn{
+    position: absolute;
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+    left: 75px; 
+    top: 510px; 
+    height: 50px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
 }
 .me{
     position:absolute;
-    font-size: 14px;
-    left: 650px;
-    top: 300px;
-    background-color: var(--orange)
+    font-size: 20px;
+    left: 850px;
+    top: 200px;
     
 }
 .dark-theme{

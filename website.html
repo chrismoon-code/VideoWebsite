@@ -4,49 +4,31 @@
         <meta charset = "UTF-8">
         <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title> my website</title>
             <link rel="stylesheet" href="website.css">
-            <body class = "light-theme">
-            <h1 class = "title">Welcome</h1>
-            <p class = "titlepage">
-                This is my website.
+            <body class = "cyan-theme">
+            <h1 class = "title"> I'm Christopher Moon </h1>
+            <p class = "aboutMe">
+                About me:
             </p>
-            <p class = "list">
+            <p class = "links">
+                How to reach me:
+            </p>
+            <button class = "github">Github</button>
+            <button class = "LinkedIn">LinkedIn</button>
+            <p class = "description">
                 My name is christopher moon and <br>
-                I am currently taking an undergrad in <br> software engineering.
+                I am currently taking an undergrad in <br> software engineering. Hobbies include <br> coding projects, playing video games <br> and playing chess.
             </p>
-            <h1 class = "me"> This person is me</h1>
-            <img id = "imageplacement" src = "/images/monkey.webp" style = "width:300px;height:300px;">
+            <p class = "pet">
+                This is my dog Toto:
+            </p>
+            <h1 class = "me"> Welcome to my website </h1>
+            <img id = "portrait" src = "/images/me.jpg" style = "width:600x;height:600px;">
+            <img id = "dog" src = "/images/dog.jpg" style = "width:200px;height:300px;">
         <div>
-            <button class="btn">Dark</button>
+            <button class="btn">Dark<br>Mode</button>
         </div>
-            <script>
-                function keyWordsearch(){
-                    gapi.client.setApiKey('AIzaSyDiFNYtfpQFptzjQZ-8XN5UBe0i_ZlETpc');
-                    gapi.client.load('youtube','v3', function(){
-                        makeRequest();
-                    });
-                }   
-                function makeRequest(){
-                    var q = $('#query').val();
-                    var request = gapi.client.youtube.search.list({
-                        q:q,
-                        part: 'snippet',
-                        maxResults: 10
-                    });
-                    request.execute(function(response){
-                        $('#results').empty()
-                        var srchItems = response.result.items;
-                        $.each(srchItems,function(index,time){
-                         vidTitle = item.snippet.title;
-                         vidThumbURL = item.snippet.thumbnails.default.url;
-                         vidThumbimg = '<pre><img id= "thumb" src = "' + vidThumbURL + '" alt = "no image available" style = "width:204px;height:128px"></pre>';   
-                         $('#results').append('<pre>' + vidTitle + vidThumbimg + '</pre>');
-                        })
-                    })
-
-                }
-            </script>
+        </script>
         <script src = "website.js">
             <noscript> Javascript is not enabled </noscript>
         </script>
